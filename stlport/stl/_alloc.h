@@ -57,10 +57,12 @@
 #  include "..\stlport\stl\_iterator_base.h>
 #endif
 
+#ifndef _STLP_LIMITS
 #include "..\stlport\limits"
+#endif
 
 #ifndef _STLP_INTERNAL_HAS_TYPE_H
-#  include "..\stlport\stl\_has_type.h>
+#  include "..\stlport\stl\_has_type.h"
 #endif
 
 _STLP_BEGIN_NAMESPACE

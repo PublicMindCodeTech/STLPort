@@ -36,7 +36,9 @@
 #  define __need_NULL
 #endif
 
+#ifndef _STLP_STDDEF
 #include "..\stlport\stddef.h"
+#endif
 
 #ifdef __GNUC__
 /* This for compiler's <new> header, because it has lines like:

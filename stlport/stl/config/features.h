@@ -215,6 +215,10 @@
 #  define _STLP_LONGEST_FLOAT_TYPE double
 #endif
 
+#if defined(BUILD_STLPORT) && defined(STLPORT_EXPORTS)
+#include "..\src\stlport_prefix.h"
+#endif
+
 /* Native headers access macros */
 #if !defined (_STLP_HAS_INCLUDE_NEXT)
 #  include "..\stlport\stl\config\_native_headers.h"

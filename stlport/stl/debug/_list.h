@@ -27,13 +27,17 @@
  *   You should not attempt to use it directly.
  */
 
+#pragma once
+
 #ifndef _STLP_INTERNAL_DBG_LIST_H
 #define _STLP_INTERNAL_DBG_LIST_H
 
-#include <algorithm>
+#ifndef _STLP_ALGORITHM
+#include "..\stlport\algorithm"
+#endif
 
 #ifndef _STLP_DBG_ITERATOR_H
-#  include "..\stlport\stl\debug/_iterator.h>
+#  include "..\stlport\stl\debug/_iterator.h"
 #endif
 
 #define _STLP_NON_DBG_LIST _STLP_PRIV _STLP_NON_DBG_NAME(list) <_Tp, _Alloc>

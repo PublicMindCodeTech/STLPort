@@ -13,9 +13,15 @@
  *
  */
 
+#pragma once
+
+#include <stdarg.h>
+#include <wchar.h>
+#include <wctype.h>
+
 #if !defined (_STLP_OUTERMOST_HEADER_ID)
 #  define _STLP_OUTERMOST_HEADER_ID 0x279
-#  include "..\stlport\stl\_cprolog.h>
+#  include "..\stlport\stl\_cprolog.h"
 #elif (_STLP_OUTERMOST_HEADER_ID == 0x279) && !defined (_STLP_DONT_POP_HEADER_ID)
 #  define _STLP_DONT_POP_HEADER_ID
 #endif
@@ -72,7 +78,7 @@ __inline int (iswascii)(int c) { return ((unsigned)(c) < 0x80); }
 
 #if (_STLP_OUTERMOST_HEADER_ID == 0x279)
 #  if ! defined (_STLP_DONT_POP_HEADER_ID)
-#    include "..\stlport\stl\_epilog.h>
+#    include "..\stlport\stl\_epilog.h"
 #    undef  _STLP_OUTERMOST_HEADER_ID
 #  else
 #    undef  _STLP_DONT_POP_HEADER_ID

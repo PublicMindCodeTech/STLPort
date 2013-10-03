@@ -20,9 +20,10 @@
 
 #pragma once
 
+#include <string.h>
+
 #ifndef _STLP_STRING_H
 
-#include <string.h>
 
 #if !defined (RC_INVOKED)
 

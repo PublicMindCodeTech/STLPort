@@ -13,8 +13,12 @@
  *
  */
 
+#pragma once
+
 #ifndef _STLP_STRING_SUM_H
 #define _STLP_STRING_SUM_H
+
+#include "..\stlport\string"
 
 _STLP_BEGIN_NAMESPACE
 

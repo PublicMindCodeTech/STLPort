@@ -27,14 +27,21 @@
  *   You should not attempt to use it directly.
  */
 
+#pragma once
+
 #ifndef _STLP_INTERNAL_FUNCTION_BASE_H
 #define _STLP_INTERNAL_FUNCTION_BASE_H
 
-#include <type_traits>
-#include <utility>
+#ifndef __STLP_TYPE_TRAITS
+#include "..\stlport\type_traits"
+#endif
+
+#ifndef _STLP_UTILITY
+#include "..\stlport\utility"
+#endif
 
 #ifndef _STLP_INTERNAL_HAS_TYPE_H
-#  include "..\stlport\stl\_has_type.h>
+#  include "..\stlport\stl\_has_type.h"
 #endif
 
 _STLP_BEGIN_NAMESPACE

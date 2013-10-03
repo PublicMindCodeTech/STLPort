@@ -27,11 +27,13 @@
  *   You should not attempt to use it directly.
  */
 
+#pragma once
+
 #ifndef _STLP_INTERNAL_DBG_DEQUE_H
 #define _STLP_INTERNAL_DBG_DEQUE_H
 
 #ifndef _STLP_DBG_ITERATOR_H
-#  include "..\stlport\stl\debug/_iterator.h>
+#  include "..\stlport\stl\debug\_iterator.h"
 #endif
 
 #define _STLP_NON_DBG_DEQUE _STLP_PRIV _STLP_NON_DBG_NAME(deque) <_Tp,_Alloc>

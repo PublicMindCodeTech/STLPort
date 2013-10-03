@@ -22,11 +22,10 @@
 
 #pragma once
 
+#include <utility>
 
 #ifndef _STLP_UTILITY
 #  define _STLP_UTILITY
-
-#include <utility>
 
 #ifndef _STLP_TYPE_TRAITS
 #  include "..\stlport\type_traits"

@@ -19,6 +19,8 @@
  * file and it is a part of the basic_string definition.
  */
 
+#pragma once
+
   template <class _Left, class _Right, class _StorageDir>
   basic_string(_STLP_PRIV __bstr_sum<_CharT, _Traits, _Alloc, _Left, _Right, _StorageDir> const& __s)
     : _M_non_dbg_impl(_Reserve_t(), __s.size(), __s.get_allocator()),

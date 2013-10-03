@@ -19,6 +19,8 @@
  *
  */
 
+#pragma once
+
 #ifndef _STLP_STRING_BASE_H
 #define _STLP_STRING_BASE_H
 

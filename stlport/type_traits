@@ -21,11 +21,10 @@
 
 #pragma once
 
-#ifndef __STLP_TYPE_TRAITS
-#define __STLP_TYPE_TRAITS
-
 #include <type_traits>
 
+#ifndef __STLP_TYPE_TRAITS
+#define __STLP_TYPE_TRAITS
 
 #ifndef _STLP_OUTERMOST_HEADER_ID
 #  define _STLP_OUTERMOST_HEADER_ID 0x3

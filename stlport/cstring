@@ -15,17 +15,19 @@
 
 #pragma once
 
+#include <cstring>
+
 #ifndef _STLP_CSTRING
 #  define _STLP_CSTRING
-
-#include <cstring>
 
 #ifndef _STLP_OUTERMOST_HEADER_ID
 #  define _STLP_OUTERMOST_HEADER_ID 0x117
 #  include "..\stlport\stl\_prolog.h"
 #endif
 
+#ifndef _STLP_STRING_H
 #  include "..\stlport\string.h"
+#endif
 
 #ifdef _STLP_IMPORT_VENDOR_CSTD
 _STLP_BEGIN_NAMESPACE

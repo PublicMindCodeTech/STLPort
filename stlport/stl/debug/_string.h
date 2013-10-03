@@ -15,11 +15,21 @@
  * modified is included with the above copyright notice.
  */
 
+#pragma once
+
 #ifndef _STLP_DBG_STRING_H
 #define _STLP_DBG_STRING_H
 
 #ifndef _STLP_DBG_ITERATOR_H
-#  include "..\stlport\stl\debug/_iterator.h>
+#  include "..\stlport\stl\debug\_iterator.h"
+#endif
+
+#ifndef _STLP_STRING
+#include "..\stlport\string"
+#endif
+
+#ifndef _STLP_STRING_H
+#include "..\stlport\string.h"
 #endif
 
 _STLP_BEGIN_NAMESPACE
@@ -83,7 +93,7 @@ private:
   { _STLP_PRIV __invalidate_range(&_M_iter_list, __f, __l); }
 
 public:
-#include "..\stlport\stl\_string_npos.h>
+#include "..\stlport\stl\_string_npos.h"
 
   allocator_type get_allocator() const { return _M_non_dbg_impl.get_allocator(); }
 
@@ -734,7 +744,7 @@ public:
   { return _M_non_dbg_impl.find_last_not_of(__c, __pos); }
 
 #if defined (_STLP_USE_TEMPLATE_EXPRESSION)
-#  include "..\stlport\stl\debug/_string_sum_methods.h>
+#  include "..\stlport\stl\debug\_string_sum_methods.h"
 #endif
 };
 

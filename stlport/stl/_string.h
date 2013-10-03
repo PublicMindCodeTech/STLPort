@@ -22,7 +22,13 @@
 #ifndef _STLP_INTERNAL_STRING_H
 #define _STLP_INTERNAL_STRING_H
 
+#ifndef _STLP_FUNCTIONAL
 #include "..\stlport\functional"
+#endif
+
+#ifndef _STLP_STRING_H
+#include "..\stlport\string.h"
+#endif
 
 #ifndef _STLP_INTERNAL_ALGOBASE_H
 #  include "..\stlport\stl\_algobase.h"
@@ -66,7 +72,9 @@
  * speaking, redundant.
  */
 
+#ifndef _STLP_STRING_BASE_H
 #include "..\stlport\stl\_string_base.h"
+#endif
 
 _STLP_BEGIN_NAMESPACE
 

@@ -27,7 +27,7 @@
 #define _STLP_ALGO_C
 
 #ifndef _STLP_INTERNAL_TEMPBUF_H
-#  include "..\stlport\stl\_tempbuf.h>
+#  include "..\stlport\stl\_tempbuf.h"
 #endif
 
 _STLP_BEGIN_NAMESPACE

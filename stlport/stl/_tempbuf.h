@@ -27,19 +27,21 @@
  *   You should not attempt to use it directly.
  */
 
+#pragma once
+
 #ifndef _STLP_INTERNAL_TEMPBUF_H
 #define _STLP_INTERNAL_TEMPBUF_H
 
 #ifndef _STLP_CLIMITS
-#  include <climits>
+#  include "..\stlport\climits"
 #endif
 
 #ifndef _STLP_INTERNAL_CSTDLIB
-#  include "..\stlport\stl\_cstdlib.h>
+#  include "..\stlport\stl\_cstdlib.h"
 #endif
 
 #ifndef _STLP_INTERNAL_UNINITIALIZED_H
-#  include "..\stlport\stl\_uninitialized.h>
+#  include "..\stlport\stl\_uninitialized.h"
 #endif
 
 _STLP_BEGIN_NAMESPACE
@@ -143,7 +145,7 @@ struct temporary_buffer : public _Temporary_buffer<_ForwardIterator, _Tp>
 
 _STLP_END_NAMESPACE
 
-#include "..\stlport\stl\_tempbuf.c>
+#include "..\stlport\stl\_tempbuf.c"
 
 #endif /* _STLP_INTERNAL_TEMPBUF_H */
 

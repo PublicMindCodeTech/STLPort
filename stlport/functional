@@ -31,10 +31,12 @@
 
 #ifndef _STLP_OUTERMOST_HEADER_ID
 #  define _STLP_OUTERMOST_HEADER_ID 0x27
-#  include "..\stlport\stl\_prolog.h>
+#  include "..\stlport\stl\_prolog.h"
 #endif
 
-#include <stdint.h>
+#ifndef _STLP_STDINT_H
+#include "..\stlport\stdint.h"
+#endif
 
 #ifndef _STLP_INTERNAL_FUNCTION_BASE_H
 #  include "..\stlport\stl\_function_base.h"

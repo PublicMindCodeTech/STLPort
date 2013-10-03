@@ -21,15 +21,16 @@
  * modified is included with the above copyright notice.
  */
 
+
 #ifndef _STLP_STRING_C
 #define _STLP_STRING_C
 
 #ifndef _STLP_INTERNAL_STRING_H
-#  include "..\stlport\stl\_string.h>
+#  include "..\stlport\stl\_string.h"
 #endif
 
 #ifndef _STLP_INTERNAL_CTRAITS_FUNCTIONS_H
-#  include "..\stlport\stl\_ctraits_fns.h>
+#  include "..\stlport\stl\_ctraits_fns.h"
 #endif
 
 #if defined (_STLP_USE_MSVC6_MEM_T_BUG_WORKAROUND)

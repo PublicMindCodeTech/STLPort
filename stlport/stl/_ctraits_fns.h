@@ -19,7 +19,7 @@
 #define _STLP_INTERNAL_CTRAITS_FUNCTIONS_H
 
 #ifndef _STLP_INTERNAL_FUNCTION_BASE_H
-#  include "..\stlport\stl\_function_base.h>
+#  include "..\stlport\stl\_function_base.h"
 #endif
 
 // This file contains a few small adapters that allow a character

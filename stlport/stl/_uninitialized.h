@@ -27,11 +27,13 @@
  *   You should not attempt to use it directly.
  */
 
+#pragma once
+
 #ifndef _STLP_INTERNAL_UNINITIALIZED_H
 #define _STLP_INTERNAL_UNINITIALIZED_H
 
 #ifndef _STLP_CSTRING
-#  include <cstring>
+#  include "..\stlport\cstring"
 #endif
 
 #ifndef _STLP_INTERNAL_ALGOBASE_H
@@ -39,7 +41,7 @@
 #endif
 
 #ifndef _STLP_INTERNAL_ALLOC_H
-#  include "..\stlport\stl\_alloc.h>
+#  include "..\stlport\stl\_alloc.h"
 #endif
 
 _STLP_BEGIN_NAMESPACE

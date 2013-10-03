@@ -24,11 +24,13 @@
  *   You should not attempt to use it directly.
  */
 
+#pragma once
+
 #ifndef _STLP_INTERNAL_DBG_SLIST_H
 #define _STLP_INTERNAL_DBG_SLIST_H
 
 #ifndef _STLP_DBG_ITERATOR_H
-#  include "..\stlport\stl\debug/_iterator.h>
+#  include "..\stlport\stl\debug/_iterator.h"
 #endif
 
 #define _STLP_NON_DBG_SLIST _STLP_PRIV _STLP_NON_DBG_NAME(forward_list) <_Tp, _Alloc>

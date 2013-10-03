@@ -16,17 +16,19 @@
  *
  */
 
+#pragma once 
+
 #ifndef _STLP_CHAR_TRAITS_H
 #define _STLP_CHAR_TRAITS_H
 
 // Define char_traits
 
 #ifndef _STLP_CSTDDEF
-#  include <cstddef>
+#  include "..\stlport\cstddef"
 #endif
 
 #ifndef _STLP_CSTRING
-#  include <cstring>
+#  include "..\stlport\cstring"
 #endif
 
 #if defined (__unix)
@@ -41,15 +43,15 @@
 #endif
 
 #ifndef _STLP_INTERNAL_ALGOBASE_H
-#  include "..\stlport\stl\_algobase.h>
+#  include "..\stlport\stl\_algobase.h"
 #endif
 
 #ifndef _STLP_INTERNAL_ALLOC_H
-#  include "..\stlport\stl\_alloc.h>
+#  include "..\stlport\stl\_alloc.h"
 #endif
 
 #ifndef _STLP_INTERNAL_CWCHAR
-#  include "..\stlport\stl\_cwchar.h>
+#  include "..\stlport\stl\_cwchar.h"
 #endif
 
 _STLP_BEGIN_NAMESPACE

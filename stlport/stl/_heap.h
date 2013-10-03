@@ -27,6 +27,8 @@
  *   You should not attempt to use it directly.
  */
 
+#pragma once
+
 #ifndef _STLP_INTERNAL_HEAP_H
 #define _STLP_INTERNAL_HEAP_H
 
@@ -105,7 +107,7 @@ inline void sort_heap(_RandomAccessIterator __first, _RandomAccessIterator __las
 
 _STLP_END_NAMESPACE
 
-#include "..\stlport\stl\_heap.c>
+#include "..\stlport\stl\_heap.c"
 
 #endif /* _STLP_INTERNAL_HEAP_H */
 

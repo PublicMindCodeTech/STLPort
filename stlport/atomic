@@ -20,7 +20,7 @@
 
 #ifndef _STLP_OUTERMOST_HEADER_ID
 #  define _STLP_OUTERMOST_HEADER_ID 0x5
-#  include "..\stlport\stl\_cprolog.h>
+#  include "..\stlport\stl\_cprolog.h"
 #endif
 
 #include <stdint.h>

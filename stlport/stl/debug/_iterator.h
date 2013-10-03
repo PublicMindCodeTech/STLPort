@@ -17,15 +17,17 @@
  *
  */
 
+#pragma once
+
 #ifndef _STLP_DBG_ITERATOR_H
 #define _STLP_DBG_ITERATOR_H
 
 #ifndef _STLP_UTILITY
-#  include <utility>
+#  include "..\stlport\utility"
 #endif
 
 #ifndef _STLP_INTERNAL_ALLOC_H
-#  include "..\stlport\stl\_alloc.h>
+#  include "..\stlport\stl\_alloc.h"
 #endif
 
 _STLP_BEGIN_NAMESPACE

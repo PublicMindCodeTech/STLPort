@@ -17,6 +17,8 @@
  * are already guarded and it has sometimes to be included several times.
  */
 
+#pragma once
+
 #if defined (_STLP_STATIC_CONST_INIT_BUG)
   enum { npos = -1 };
 #elif defined (__GNUC__) && (__GNUC__ == 2) && (__GNUC_MINOR__ == 96)

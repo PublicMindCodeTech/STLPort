@@ -21,6 +21,8 @@
 /* NOTE: include it after <type_traits>
  */
 
+#pragma once
+
 #ifndef _STLP_INTERNAL_HAS_TYPE_H
 #define _STLP_INTERNAL_HAS_TYPE_H
 

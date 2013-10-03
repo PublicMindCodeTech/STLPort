@@ -58,7 +58,7 @@
 #  include "..\stlport\stl\_iterator_base.h"
 #endif
 
-#ifndef _STLP_TYPE_TRAITS
+#ifndef __STLP_TYPE_TRAITS
 #  include "..\stlport\type_traits"
 #endif
 

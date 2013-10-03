@@ -27,6 +27,8 @@
  *   You should not attempt to use it directly.
  */
 
+#pragma once
+
 #ifndef _STLP_INTERNAL_DBG_HASHTABLE_H
 #define _STLP_INTERNAL_DBG_HASHTABLE_H
 
@@ -35,7 +37,7 @@
 // unordered_set, unordered_map, unordered_multiset, unordered_multimap
 
 #ifndef _STLP_DBG_ITERATOR_H
-#  include "..\stlport\stl\debug/_iterator.h>
+#  include "..\stlport\stl\debug\_iterator.h"
 #endif
 
 _STLP_BEGIN_NAMESPACE

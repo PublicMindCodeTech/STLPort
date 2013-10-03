@@ -13,6 +13,8 @@
  *
  */
 
+#pragma once
+
 #ifndef _STLP_STRING_OPERATORS_H
 #define _STLP_STRING_OPERATORS_H
 

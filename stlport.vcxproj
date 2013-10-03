@@ -1,0 +1,538 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{58124B8F-D462-47D2-AC8A-95B7BBE98246}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>stlport</RootNamespace>
+    <ProjectName>stlport</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_DLL;_USRDLL;STLPORT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_DLL;_USRDLL;STLPORT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_DLL;_USRDLL;STLPORT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_DLL;_USRDLL;STLPORT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="src\acquire_release.h" />
+    <ClInclude Include="src\aligned_buffer.h" />
+    <ClInclude Include="src\c_locale.h" />
+    <ClInclude Include="src\locale_impl.h" />
+    <ClInclude Include="src\lock_free_slist.h" />
+    <ClInclude Include="src\message_facets.h" />
+    <ClInclude Include="src\stdio_streambuf.h" />
+    <ClInclude Include="src\stlport_prefix.h" />
+    <ClInclude Include="src\warning_disable.h" />
+    <ClInclude Include="src\_stdio_file.h" />
+    <ClInclude Include="stlport\assert.h" />
+    <ClInclude Include="stlport\callstack.h" />
+    <ClInclude Include="stlport\ctype.h" />
+    <ClInclude Include="stlport\errno.h" />
+    <ClInclude Include="stlport\exception.h" />
+    <ClInclude Include="stlport\float.h" />
+    <ClInclude Include="stlport\iso646.h" />
+    <ClInclude Include="stlport\limits.h" />
+    <ClInclude Include="stlport\locale.h" />
+    <ClInclude Include="stlport\math.h" />
+    <ClInclude Include="stlport\mem.h" />
+    <ClInclude Include="stlport\pthread.h" />
+    <ClInclude Include="stlport\rlocks.h" />
+    <ClInclude Include="stlport\setjmp.h" />
+    <ClInclude Include="stlport\signal.h" />
+    <ClInclude Include="stlport\stdarg.h" />
+    <ClInclude Include="stlport\stddef.h" />
+    <ClInclude Include="stlport\stdint.h" />
+    <ClInclude Include="stlport\stdio.h" />
+    <ClInclude Include="stlport\stdiostream.h" />
+    <ClInclude Include="stlport\stdlib.h" />
+    <ClInclude Include="stlport\stl\boost_type_traits.h" />
+    <ClInclude Include="stlport\stl\char_traits.h" />
+    <ClInclude Include="stlport\stl\concept_checks.h" />
+    <ClInclude Include="stlport\stl\config\compat.h" />
+    <ClInclude Include="stlport\stl\config\features.h" />
+    <ClInclude Include="stlport\stl\config\host.h" />
+    <ClInclude Include="stlport\stl\config\user_config.h" />
+    <ClInclude Include="stlport\stl\config\_auto_link.h" />
+    <ClInclude Include="stlport\stl\config\_detect_dll_or_lib.h" />
+    <ClInclude Include="stlport\stl\config\_epilog.h" />
+    <ClInclude Include="stlport\stl\config\_feedback.h" />
+    <ClInclude Include="stlport\stl\config\_msvc.h" />
+    <ClInclude Include="stlport\stl\config\_native_headers.h" />
+    <ClInclude Include="stlport\stl\config\_prolog.h" />
+    <ClInclude Include="stlport\stl\config\_system.h" />
+    <ClInclude Include="stlport\stl\config\_warnings_off.h" />
+    <ClInclude Include="stlport\stl\config\_windows.h" />
+    <ClInclude Include="stlport\stl\c_locale.h" />
+    <ClInclude Include="stlport\stl\debug\_debug.h" />
+    <ClInclude Include="stlport\stl\debug\_deque.h" />
+    <ClInclude Include="stlport\stl\debug\_forward_list.h" />
+    <ClInclude Include="stlport\stl\debug\_hashtable.h" />
+    <ClInclude Include="stlport\stl\debug\_iterator.h" />
+    <ClInclude Include="stlport\stl\debug\_list.h" />
+    <ClInclude Include="stlport\stl\debug\_string.h" />
+    <ClInclude Include="stlport\stl\debug\_string_sum_methods.h" />
+    <ClInclude Include="stlport\stl\debug\_tree.h" />
+    <ClInclude Include="stlport\stl\debug\_vector.h" />
+    <ClInclude Include="stlport\stl\msc_stdint.h" />
+    <ClInclude Include="stlport\stl\msl_string.h" />
+    <ClInclude Include="stlport\stl\pointers\_deque.h" />
+    <ClInclude Include="stlport\stl\pointers\_forward_list.h" />
+    <ClInclude Include="stlport\stl\pointers\_list.h" />
+    <ClInclude Include="stlport\stl\pointers\_set.h" />
+    <ClInclude Include="stlport\stl\pointers\_tools.h" />
+    <ClInclude Include="stlport\stl\pointers\_vector.h" />
+    <ClInclude Include="stlport\stl\_abbrevs.h" />
+    <ClInclude Include="stlport\stl\_algobase.h" />
+    <ClInclude Include="stlport\stl\_alloc.h" />
+    <ClInclude Include="stlport\stl\_auto_ptr.h" />
+    <ClInclude Include="stlport\stl\_bitset.h" />
+    <ClInclude Include="stlport\stl\_bvector.h" />
+    <ClInclude Include="stlport\stl\_carray.h" />
+    <ClInclude Include="stlport\stl\_cctype.h" />
+    <ClInclude Include="stlport\stl\_clocale.h" />
+    <ClInclude Include="stlport\stl\_cmath.h" />
+    <ClInclude Include="stlport\stl\_codecvt.h" />
+    <ClInclude Include="stlport\stl\_collate.h" />
+    <ClInclude Include="stlport\stl\_complex.h" />
+    <ClInclude Include="stlport\stl\_config_compat_post.h" />
+    <ClInclude Include="stlport\stl\_cprolog.h" />
+    <ClInclude Include="stlport\stl\_csetjmp.h" />
+    <ClInclude Include="stlport\stl\_csignal.h" />
+    <ClInclude Include="stlport\stl\_cstdarg.h" />
+    <ClInclude Include="stlport\stl\_cstdint.h" />
+    <ClInclude Include="stlport\stl\_cstdio.h" />
+    <ClInclude Include="stlport\stl\_cstdlib.h" />
+    <ClInclude Include="stlport\stl\_ctime.h" />
+    <ClInclude Include="stlport\stl\_ctraits_fns.h" />
+    <ClInclude Include="stlport\stl\_ctype.h" />
+    <ClInclude Include="stlport\stl\_cwchar.h" />
+    <ClInclude Include="stlport\stl\_cwctype.h" />
+    <ClInclude Include="stlport\stl\_epilog.h" />
+    <ClInclude Include="stlport\stl\_exception.h" />
+    <ClInclude Include="stlport\stl\_facets_fwd.h" />
+    <ClInclude Include="stlport\stl\_function_adaptors.h" />
+    <ClInclude Include="stlport\stl\_function_base.h" />
+    <ClInclude Include="stlport\stl\_hashtable.h" />
+    <ClInclude Include="stlport\stl\_hash_fun.h" />
+    <ClInclude Include="stlport\stl\_has_type.h" />
+    <ClInclude Include="stlport\stl\_heap.h" />
+    <ClInclude Include="stlport\stl\_iomanip.h" />
+    <ClInclude Include="stlport\stl\_ios.h" />
+    <ClInclude Include="stlport\stl\_ioserr.h" />
+    <ClInclude Include="stlport\stl\_iosfwd.h" />
+    <ClInclude Include="stlport\stl\_iostream_string.h" />
+    <ClInclude Include="stlport\stl\_ios_base.h" />
+    <ClInclude Include="stlport\stl\_istream.h" />
+    <ClInclude Include="stlport\stl\_istreambuf_iterator.h" />
+    <ClInclude Include="stlport\stl\_iterator.h" />
+    <ClInclude Include="stlport\stl\_iterator_base.h" />
+    <ClInclude Include="stlport\stl\_list.h" />
+    <ClInclude Include="stlport\stl\_locale.h" />
+    <ClInclude Include="stlport\stl\_map.h" />
+    <ClInclude Include="stlport\stl\_mbstate_t.h" />
+    <ClInclude Include="stlport\stl\_messages_facets.h" />
+    <ClInclude Include="stlport\stl\_monetary.h" />
+    <ClInclude Include="stlport\stl\_new.h" />
+    <ClInclude Include="stlport\stl\_numeric.h" />
+    <ClInclude Include="stlport\stl\_numpunct.h" />
+    <ClInclude Include="stlport\stl\_num_get.h" />
+    <ClInclude Include="stlport\stl\_num_put.h" />
+    <ClInclude Include="stlport\stl\_ostream.h" />
+    <ClInclude Include="stlport\stl\_ostreambuf_iterator.h" />
+    <ClInclude Include="stlport\stl\_prolog.h" />
+    <ClInclude Include="stlport\stl\_pthread_alloc.h" />
+    <ClInclude Include="stlport\stl\_ptrs_specialize.h" />
+    <ClInclude Include="stlport\stl\_range_errors.h" />
+    <ClInclude Include="stlport\stl\_raw_storage_iter.h" />
+    <ClInclude Include="stlport\stl\_relops_cont.h" />
+    <ClInclude Include="stlport\stl\_relops_hash_cont.h" />
+    <ClInclude Include="stlport\stl\_rope.h" />
+    <ClInclude Include="stlport\stl\_set.h" />
+    <ClInclude Include="stlport\stl\_shared_ptr.h" />
+    <ClInclude Include="stlport\stl\_sparc_atomic.h" />
+    <ClInclude Include="stlport\stl\_sstream.h" />
+    <ClInclude Include="stlport\stl\_stdexcept_base.h" />
+    <ClInclude Include="stlport\stl\_stlport_version.h" />
+    <ClInclude Include="stlport\stl\_streambuf.h" />
+    <ClInclude Include="stlport\stl\_stream_iterator.h" />
+    <ClInclude Include="stlport\stl\_string.h" />
+    <ClInclude Include="stlport\stl\_string_base.h" />
+    <ClInclude Include="stlport\stl\_string_fwd.h" />
+    <ClInclude Include="stlport\stl\_string_hash.h" />
+    <ClInclude Include="stlport\stl\_string_io.h" />
+    <ClInclude Include="stlport\stl\_string_npos.h" />
+    <ClInclude Include="stlport\stl\_string_operators.h" />
+    <ClInclude Include="stlport\stl\_string_sum.h" />
+    <ClInclude Include="stlport\stl\_string_sum_methods.h" />
+    <ClInclude Include="stlport\stl\_string_workaround.h" />
+    <ClInclude Include="stlport\stl\_strstream.h" />
+    <ClInclude Include="stlport\stl\_tempbuf.h" />
+    <ClInclude Include="stlport\stl\_threads.h" />
+    <ClInclude Include="stlport\stl\_time_facets.h" />
+    <ClInclude Include="stlport\stl\_tree.h" />
+    <ClInclude Include="stlport\stl\_typeinfo.h" />
+    <ClInclude Include="stlport\stl\_uninitialized.h" />
+    <ClInclude Include="stlport\stl\_unordered_map.h" />
+    <ClInclude Include="stlport\stl\_unordered_set.h" />
+    <ClInclude Include="stlport\string.h" />
+    <ClInclude Include="stlport\time.h" />
+    <ClInclude Include="stlport\typeinfo.h" />
+    <ClInclude Include="stlport\wchar.h" />
+    <ClInclude Include="stlport\wctype.h" />
+    <ClInclude Include="resources\resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\allocators.cpp" />
+    <ClCompile Include="src\bitset.cpp" />
+    <ClCompile Include="src\callstack.cc" />
+    <ClCompile Include="src\chrono.cc" />
+    <ClCompile Include="src\codecvt.cpp" />
+    <ClCompile Include="src\collate.cpp" />
+    <ClCompile Include="src\complex.cpp" />
+    <ClCompile Include="src\complex_io.cpp" />
+    <ClCompile Include="src\complex_trig.cpp" />
+    <ClCompile Include="src\ctype.cpp" />
+    <ClCompile Include="src\cxa.c" />
+    <ClCompile Include="src\c_locale.c" />
+    <ClCompile Include="src\demangle.cc" />
+    <ClCompile Include="src\dll_main.cpp" />
+    <ClCompile Include="src\except.cc" />
+    <ClCompile Include="src\facets_byname.cpp" />
+    <ClCompile Include="src\fstream.cpp" />
+    <ClCompile Include="src\ios.cpp" />
+    <ClCompile Include="src\iostream.cpp" />
+    <ClCompile Include="src\istream.cpp" />
+    <ClCompile Include="src\locale.cpp" />
+    <ClCompile Include="src\locale_catalog.cpp" />
+    <ClCompile Include="src\locale_impl.cpp" />
+    <ClCompile Include="src\messages.cpp" />
+    <ClCompile Include="src\monetary.cpp" />
+    <ClCompile Include="src\new.cpp" />
+    <ClCompile Include="src\numpunct.cpp" />
+    <ClCompile Include="src\num_get.cpp" />
+    <ClCompile Include="src\num_get_float.cpp" />
+    <ClCompile Include="src\num_put.cpp" />
+    <ClCompile Include="src\num_put_float.cpp" />
+    <ClCompile Include="src\ostream.cpp" />
+    <ClCompile Include="src\reachable.cc" />
+    <ClCompile Include="src\sstream.cpp" />
+    <ClCompile Include="src\stdio_streambuf.cpp" />
+    <ClCompile Include="src\string.cpp" />
+    <ClCompile Include="src\strstream.cpp" />
+    <ClCompile Include="src\system_error.cc" />
+    <ClCompile Include="src\thread.cc" />
+    <ClCompile Include="src\time_facets.cpp" />
+    <ClCompile Include="stlport\stl\debug\_debug.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="stlport\stl\_algo.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="stlport\stl\_algobase.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="stlport\stl\_alloc.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="stlport\stl\_bitset.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="stlport\stl\_complex.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="stlport\stl\_deque.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="stlport\stl\_forward_list.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="stlport\stl\_fstream.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="stlport\stl\_hashtable.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="stlport\stl\_heap.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="stlport\stl\_ios.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="stlport\stl\_istream.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="stlport\stl\_list.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="stlport\stl\_monetary.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="stlport\stl\_numeric.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="stlport\stl\_num_get.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="stlport\stl\_num_put.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="stlport\stl\_ostream.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="stlport\stl\_range_errors.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="stlport\stl\_rope.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="stlport\stl\_sstream.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="stlport\stl\_stdexcept_base.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="stlport\stl\_streambuf.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="stlport\stl\_string.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="stlport\stl\_string_io.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="stlport\stl\_tempbuf.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="stlport\stl\_threads.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="stlport\stl\_time_facets.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="stlport\stl\_tree.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="stlport\stl\_valarray.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="stlport\stl\_vector.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="resources\stlport.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="stlport\algorithm" />
+    <None Include="stlport\atomic" />
+    <None Include="stlport\bitset" />
+    <None Include="stlport\cassert" />
+    <None Include="stlport\cctype" />
+    <None Include="stlport\cerrno" />
+    <None Include="stlport\cfloat" />
+    <None Include="stlport\chrono" />
+    <None Include="stlport\ciso646" />
+    <None Include="stlport\climits" />
+    <None Include="stlport\clocale" />
+    <None Include="stlport\cmath" />
+    <None Include="stlport\complex" />
+    <None Include="stlport\condition_variable" />
+    <None Include="stlport\csetjmp" />
+    <None Include="stlport\csignal" />
+    <None Include="stlport\cstdarg" />
+    <None Include="stlport\cstddef" />
+    <None Include="stlport\cstdint" />
+    <None Include="stlport\cstdio" />
+    <None Include="stlport\cstdlib" />
+    <None Include="stlport\cstring" />
+    <None Include="stlport\ctime" />
+    <None Include="stlport\cwchar" />
+    <None Include="stlport\cwctype" />
+    <None Include="stlport\deque" />
+    <None Include="stlport\exception" />
+    <None Include="stlport\forward_list" />
+    <None Include="stlport\fstream" />
+    <None Include="stlport\functional" />
+    <None Include="stlport\iomanip" />
+    <None Include="stlport\ios" />
+    <None Include="stlport\iosfwd" />
+    <None Include="stlport\iostream" />
+    <None Include="stlport\istream" />
+    <None Include="stlport\iterator" />
+    <None Include="stlport\limits" />
+    <None Include="stlport\list" />
+    <None Include="stlport\locale" />
+    <None Include="stlport\map" />
+    <None Include="stlport\memory" />
+    <None Include="stlport\mutex" />
+    <None Include="stlport\new" />
+    <None Include="stlport\numeric" />
+    <None Include="stlport\ostream" />
+    <None Include="stlport\pthread_alloc" />
+    <None Include="stlport\queue" />
+    <None Include="stlport\ratio" />
+    <None Include="stlport\rope" />
+    <None Include="stlport\set" />
+    <None Include="stlport\sstream" />
+    <None Include="stlport\stack" />
+    <None Include="stlport\stdexcept" />
+    <None Include="stlport\streambuf" />
+    <None Include="stlport\string" />
+    <None Include="stlport\strstream" />
+    <None Include="stlport\system_error" />
+    <None Include="stlport\thread" />
+    <None Include="stlport\typeinfo" />
+    <None Include="stlport\type_traits" />
+    <None Include="stlport\unordered_map" />
+    <None Include="stlport\unordered_set" />
+    <None Include="stlport\utility" />
+    <None Include="stlport\valarray" />
+    <None Include="stlport\vector" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

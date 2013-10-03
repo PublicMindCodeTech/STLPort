@@ -15,23 +15,26 @@
  * modified is included with the above copyright notice.
  *
  */
+
+#pragma once
+
 #ifndef _STLP_IOS_BASE_H
 #define _STLP_IOS_BASE_H
 
 #ifndef _STLP_INTERNAL_STDEXCEPT_BASE
-#  include "..\stlport\stl\_stdexcept_base.h>
+#  include "..\stlport\stl\_stdexcept_base.h"
 #endif
 
 #ifndef _STLP_UTILITY
-#  include <utility>
+#  include "..\stlport\utility"
 #endif
 
 #ifndef _STLP_INTERNAL_LOCALE_H
-#  include "..\stlport\stl\_locale.h>
+#  include "..\stlport\stl\_locale.h"
 #endif
 
 #ifndef _STLP_INTERNAL_STRING_H
-#  include "..\stlport\stl\_string.h>
+#  include "..\stlport\stl\_string.h"
 #endif
 
 _STLP_BEGIN_NAMESPACE

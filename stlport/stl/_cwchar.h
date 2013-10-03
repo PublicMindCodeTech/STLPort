@@ -16,10 +16,10 @@
 
 #pragma once
 
+#include <wchar.h>
+
 #ifndef _STLP_INTERNAL_CWCHAR
 #define _STLP_INTERNAL_CWCHAR
-
-#include <wchar.h>
 
 #if defined (_STLP_WCE_EVC3)
 #  ifndef _STLP_INTERNAL_MBSTATE_T

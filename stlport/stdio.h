@@ -19,8 +19,10 @@
  */
 #pragma once
 
-#include <wchar.h>
 #include <stdio.h>
+
+#ifndef _STLP_STDIO
+#define _STLP_STDIO
 
 #if !defined(RC_INVOKED)
 
@@ -60,3 +62,5 @@ _STLP_END_NAMESPACE
 #  endif
 
 #endif /* RC_INVOKED */
+
+#endif // _STLP_STDIO

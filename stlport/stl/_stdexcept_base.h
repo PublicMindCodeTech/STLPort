@@ -16,24 +16,26 @@
  *
  */
 
+#pragma once
+
 #ifndef _STLP_INTERNAL_STDEXCEPT_BASE
 #define _STLP_INTERNAL_STDEXCEPT_BASE
 
 #if !defined (_STLP_USE_NATIVE_STDEXCEPT) || defined (_STLP_USE_OWN_NAMESPACE)
 
 #  ifndef _STLP_INTERNAL_EXCEPTION
-#    include "..\stlport\stl\_exception.h>
+#    include "..\stlport\stl\_exception.h"
 #  endif
 
 #  if defined(_STLP_USE_EXCEPTIONS) || \
     !(defined(_MIPS_SIM) && defined(_ABIO32) && (_MIPS_SIM == _ABIO32))
 
 #    ifndef _STLP_CSTRING
-#      include <cstring>
+#      include "..\stlport\cstring"
 #    endif
 
 #    ifndef _STLP_STRING_FWD_H
-#      include "..\stlport\stl\_string_fwd.h>
+#      include "..\stlport\stl\_string_fwd.h"
 #    endif
 
 #    ifndef _STLP_USE_NO_IOSTREAMS

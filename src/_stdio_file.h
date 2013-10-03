@@ -15,6 +15,7 @@
  * modified is included with the above copyright notice.
  *
  */
+#pragma once
 
 #ifndef _STLP_STDIO_FILE_H
 #define _STLP_STDIO_FILE_H
@@ -24,10 +25,10 @@
  * the C++ I/O library. */
 
 #ifndef _STLP_CSTDIO
-#  include <cstdio>
+#  include "..\stlport\cstdio"
 #endif
 #ifndef _STLP_CSTDDEF
-#  include <cstddef>
+#  include "..\stlport\cstddef"
 #endif
 
 #if defined (__MSL__)

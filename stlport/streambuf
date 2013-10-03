@@ -15,24 +15,29 @@
  * modified is included with the above copyright notice.
  *
  */
+
+#pragma once
+
+#include <streambuf>
+
 #ifndef _STLP_STREAMBUF
 #define _STLP_STREAMBUF
 
 #ifndef _STLP_OUTERMOST_HEADER_ID
 #  define _STLP_OUTERMOST_HEADER_ID 0x1066
-#  include "..\stlport\stl\_prolog.h>
+#  include "..\stlport\stl\_prolog.h"
 #endif
 
 #if (_STLP_OUTERMOST_HEADER_ID == 0x1066)
-#  include "..\stlport\stl\_ioserr.h>
+#  include "..\stlport\stl\_ioserr.h"
 
 #  ifndef _STLP_INTERNAL_STREAMBUF
-#    include "..\stlport\stl\_streambuf.h>
+#    include "..\stlport\stl\_streambuf.h"
 #  endif
 #endif
 
 #if (_STLP_OUTERMOST_HEADER_ID == 0x1066)
-#  include "..\stlport\stl\_epilog.h>
+#  include "..\stlport\stl\_epilog.h"
 #  undef _STLP_OUTERMOST_HEADER_ID
 #endif
 

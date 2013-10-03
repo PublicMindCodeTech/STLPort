@@ -28,9 +28,15 @@
 
 #pragma once
 
-
 #ifndef _STLP_INTERNAL_EXCEPTION
 #define _STLP_INTERNAL_EXCEPTION
+
+#ifndef _STLP_OLDSTD_exception
+#include <..\stlport\exception.h>
+#endif
+#ifndef _STLP_EXCEPTION
+#include <..\stlport\exception>
+#endif
 
 #if !defined (_STLP_NO_EXCEPTION_HEADER)
 

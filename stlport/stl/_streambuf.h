@@ -15,11 +15,16 @@
  * modified is included with the above copyright notice.
  *
  */
+
+#pragma once
+
+#include <streambuf>
+
 #ifndef _STLP_INTERNAL_STREAMBUF
 #define _STLP_INTERNAL_STREAMBUF
 
 #ifndef _STLP_IOS_BASE_H
-#  include "..\stlport\stl\_ios_base.h>      // Needed for ios_base bitfield members.
+#  include "..\stlport\stl\_ios_base.h"      // Needed for ios_base bitfield members.
 #endif                            // <ios_base> includes <iosfwd>.
 
 _STLP_BEGIN_NAMESPACE
@@ -277,7 +282,7 @@ _STLP_EXPORT_TEMPLATE_CLASS basic_streambuf<wchar_t, char_traits<wchar_t> >;
 _STLP_END_NAMESPACE
 
 #if defined (_STLP_EXPOSE_STREAM_IMPLEMENTATION)
-#  include "..\stlport\stl\_streambuf.c>
+#  include "..\stlport\stl\_streambuf.c"
 #endif
 
 #endif

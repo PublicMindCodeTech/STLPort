@@ -16,11 +16,13 @@
  *
  */
 
+#pragma once
+
 #ifndef _STLP_STRING_FWD_H
 #define _STLP_STRING_FWD_H
 
 #ifndef _STLP_INTERNAL_IOSFWD
-#  include "..\stlport\stl\_iosfwd.h>
+#  include "..\stlport\stl\_iosfwd.h"
 #endif
 
 _STLP_BEGIN_NAMESPACE

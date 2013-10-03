@@ -13,12 +13,16 @@
  *
  */
 
+#pragma once
+
+#include <excpt.h>
+
 #ifndef _STLP_OLDSTD_exception
 #define _STLP_OLDSTD_exception
 
 #if !defined (_STLP_OUTERMOST_HEADER_ID)
 #  define _STLP_OUTERMOST_HEADER_ID 0x824
-#  include "..\stlport\stl\_prolog.h>
+#  include "..\stlport\stl\_prolog.h"
 #endif
 
 #if defined (__BORLANDC__) || defined (_MSC_VER)
@@ -32,7 +36,7 @@
 #endif
 
 #if (_STLP_OUTERMOST_HEADER_ID == 0x824)
-#  include "..\stlport\stl\_epilog.h>
+#  include "..\stlport\stl\_epilog.h"
 #  undef  _STLP_OUTERMOST_HEADER_ID
 #endif
 

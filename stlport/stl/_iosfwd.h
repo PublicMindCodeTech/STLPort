@@ -1,5 +1,15 @@
+
+
+#pragma once
+
+#include <iosfwd>
+
 #ifndef _STLP_INTERNAL_IOSFWD
 #define _STLP_INTERNAL_IOSFWD
+
+#ifndef _STLP_IOSFWD
+#include "..\stlport\iosfwd"
+#endif
 
 // This file provides forward declarations of the most important I/O
 // classes.  Note that almost all of those classes are class templates,
@@ -15,7 +25,7 @@
 // template arguments.  All of the other I/O headers include <iosfwd>.
 
 #ifndef _STLP_CHAR_TRAITS_H
-#  include "..\stlport\stl\char_traits.h>
+#  include "..\stlport\stl\char_traits.h"
 #endif
 
 _STLP_BEGIN_NAMESPACE

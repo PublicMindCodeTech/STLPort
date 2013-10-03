@@ -80,7 +80,7 @@
 #if !defined (_STLP_WINDOWS_H_INCLUDED) && !defined(_STLP_WCE)
 #  define _STLP_WINDOWS_H_INCLUDED
 #  if defined (__BUILDING_STLPORT)
-#    include <..\stlport\stl\config\_native_headers.h>
+#    include "..\stlport\stl\config\_native_headers.h""
 /* Here we define _STLP_OUTERMOST_HEADER_ID to avoid indirect inclusion
  * of STLport stuffs from C/C++ Standard headers exposed by STLport
  * as configuration is not yet completed. */

@@ -13,9 +13,16 @@
  *
  */
 
+#pragma once
+
+#include <wchar.h>
+
+#ifndef _STLP_WCHAR
+#define _STLP_WCHAR
+
 #if !defined (_STLP_OUTERMOST_HEADER_ID)
 #  define _STLP_OUTERMOST_HEADER_ID 0x278
-#  include "..\stlport\stl\_cprolog.h>
+#  include "..\stlport\stl\_cprolog.h"
 #elif (_STLP_OUTERMOST_HEADER_ID == 0x278) && !defined (_STLP_DONT_POP_HEADER_ID)
 #  define _STLP_DONT_POP_HEADER_ID
 #endif
@@ -50,15 +57,16 @@ using _STLP_VENDOR_CSTD::strspn;
 #endif /* !defined (_STLP_WCE_EVC3) && !defined (_STLP_NO_WCHAR_T) */
 
 #ifndef _STLP_INTERNAL_MBSTATE_T
-#  include "..\stlport\stl\_mbstate_t.h>
+#  include "..\stlport\stl\_mbstate_t.h"
 #endif
 
 #if (_STLP_OUTERMOST_HEADER_ID == 0x278)
 #  if ! defined (_STLP_DONT_POP_HEADER_ID)
-#    include "..\stlport\stl\_epilog.h>
+#    include "..\stlport\stl\_epilog.h"
 #    undef  _STLP_OUTERMOST_HEADER_ID
 #  else
 #    undef  _STLP_DONT_POP_HEADER_ID
 #  endif
 #endif
 
+#endif // _STLP_WCHAR

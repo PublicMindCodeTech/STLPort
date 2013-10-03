@@ -26,8 +26,36 @@
 #  endif
 #endif
 
+#ifndef _STLP_WCHAR
+#include "..\stlport\wchar.h"
+#endif
+
+#ifndef _STLP_CSTDIO
 #include "..\stlport\cstdio"
+#endif
+
+#ifndef _STLP_STDIO
 #include "..\stlport\stdio.h"
+#endif
+
+#if defined (_STLP_MSVC)
+namespace stlp_std{
+	using namespace std;
+	namespace std {
+		typedef ::FILE FILE;
+		typedef ::fpos_t fpos_t;
+		typedef ::size_t size_t;
+	}
+}
+#endif
+
+#ifdef _STLP_IMPORT_VENDOR_CSTD
+_STLP_BEGIN_NAMESPACE
+	using _STLP_VENDOR_CSTD::FILE;
+	using _STLP_VENDOR_CSTD::fpos_t;
+	using _STLP_VENDOR_CSTD::size_t;
+#endif
+
 
 #if defined (_STLP_MSVC_LIB) && (_STLP_MSVC_LIB < 1400) || defined (_STLP_USING_PLATFORM_SDK_COMPILER)
 inline int vsnprintf(char *s1, size_t n, const char *s2, va_list v)

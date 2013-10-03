@@ -16,25 +16,31 @@
  *
  */
 
+
+#pragma once
+
+#include <iosfwd>
+
 #ifndef _STLP_IOSFWD
 #define _STLP_IOSFWD
 
+
 #ifndef _STLP_OUTERMOST_HEADER_ID
 #  define _STLP_OUTERMOST_HEADER_ID 0x1034
-#  include "..\stlport\stl\_prolog.h>
+#  include "..\stlport\stl\_prolog.h"
 #endif
 
 #if (_STLP_OUTERMOST_HEADER_ID == 0x1034) && \
    !(defined (_STLP_NO_IOSTREAMS) && defined (_STLP_IMPORT_VENDOR_STD))
-#  include "..\stlport\stl\_ioserr.h>
+#  include "..\stlport\stl\_ioserr.h"
 
 #  ifndef _STLP_INTERNAL_IOSFWD
-#    include "..\stlport\stl\_iosfwd.h>
+#    include "..\stlport\stl\_iosfwd.h"
 #  endif
 #endif
 
 #if (_STLP_OUTERMOST_HEADER_ID == 0x1034)
-#  include "..\stlport\stl\_epilog.h>
+#  include "..\stlport\stl\_epilog.h"
 #  undef _STLP_OUTERMOST_HEADER_ID
 #endif
 

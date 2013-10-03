@@ -18,6 +18,8 @@
 #ifndef _STLP_STDINT_H
 #define _STLP_STDINT_H
 
+#include <stdint.h>
+
 #ifndef _STLP_OUTERMOST_HEADER_ID
 #  define _STLP_OUTERMOST_HEADER_ID 0x263
 #  include "..\stlport\stl\_cprolog.h"

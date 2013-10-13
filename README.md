@@ -22,7 +22,7 @@ STLPort 5.2.1
 <br>info</br>
 <br>if error not fiding vc directories add to system environment variable path: </br>
 <br>;C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC;C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin;C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE;</br>
-<br>and windows sdk include/libs paths if also can't find include files ans lib files.</br>
+<br>and windows sdk include/libs paths if also can't find include files / lib files.</br>
 
 <p> </p>
 

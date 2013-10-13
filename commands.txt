@@ -1,0 +1,15 @@
+
+(-select compiler version)
+
+cmd 
+configure msvc11x64 --with-dynamic-rtl
+
+configure msvc11 --with-dynamic-rtl
+
+############################################
+
+
+
+from vcvars-x86 - nmake clean install
+
+from vcvars-x64 - nmake clean install

@@ -17,32 +17,24 @@ STLPort 5.2.1
 <br>or</br>
 <br>from vcvars-x64 - nmake clean install</br>
 
-<p></p>
+<p> </p>
 
-<p>info</p>
+<br>info</br>
 <br>if error not fiding vc directories add to system environment variable path: </br>
 <br>;C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC;C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin;C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE;</br>
 <br>and windows sdk include/libs paths if also can't find include files ans lib files.</br>
 
-<p></p>
+<p> </p>
 
-<p>COPYRIGHTS</p>
+<br>COPYRIGHTS</br>
    <br>Copyright (c) 1994 Hewlett-Packard Company</br>
-
    <br>Copyright (c) 1996,97 Silicon Graphics Computer Systems, Inc.</br>
-
    <br>Copyright (c) 1997 Moscow Center for SPARC Technology.</br>
-
    <br>Copyright (c) 1997 Mark of the Unicorn, Inc.</br>
-
    <br>Copyright (c) 1999-2003 Boris Fomitchev</br>
-
    <br>Copyright (c) 2000 Jens Maurer</br>
-
    <br>Copyright (c) 2003-2008 Francois Dumont</br>
-
    <br>Copyright (c) 1997-2010 Petr Ovtchenkov</br>
-
    <br>Copyright (c) 2008-2009 Dmitry Osmakov</br>
 
    <br>This material is provided "as is", with absolutely no warranty expressed</br>

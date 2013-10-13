@@ -1,9 +1,8 @@
-==============
 STLPort 5.2.1
 ==============
 
-Build script commands
-(-select your compiler version from STLPort directory)
+<p>Build script commands</p>
+<br>(-select your compiler version from STLPort directory)</br>
 run
 build-msvcxx-x64.bat or build-msvcxx-x86.bat
 
